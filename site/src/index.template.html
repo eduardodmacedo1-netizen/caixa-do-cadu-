@@ -291,7 +291,7 @@
       <img src="assets/img/logo.png" alt="" width="36" height="36">
       <div><b>G.M. PÁDUA</b><span>ADVOGADOS</span></div>
     </a>
-    <button class="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><svg class="i" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"/></svg></button>
+    <button class="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">{{icon:list}}</button>
     <ul class="menu" id="menu">
       <li><a href="#escritorio">Escritório</a></li>
       <li><a href="#areas">Áreas</a></li>
@@ -341,8 +341,8 @@
 
   <div class="strip" aria-label="Áreas do Direito atendidas">
     <div class="track">
-      <ul><li>Administrativo</li><li>Aeronáutico</li><li>Arbitragem</li><li>Autoral</li><li>Cível</li><li>Compliance</li><li>Construção civil</li><li>Consumidor</li><li>Contratos</li><li>Digital</li><li>Imobiliário</li><li>Infraestrutura</li><li>Licitações</li><li>Mídias e publicidade</li><li>Patrimonial</li><li>Petróleo e gás</li><li>Planejamento</li><li>Propriedade intelectual</li><li>Regulatório</li><li>Societário</li><li>Startups</li><li>Terceiro setor</li><li>Trabalhista</li><li>Tributário</li><li>Urbanístico</li></ul>
-      <ul aria-hidden="true"><li>Administrativo</li><li>Aeronáutico</li><li>Arbitragem</li><li>Autoral</li><li>Cível</li><li>Compliance</li><li>Construção civil</li><li>Consumidor</li><li>Contratos</li><li>Digital</li><li>Imobiliário</li><li>Infraestrutura</li><li>Licitações</li><li>Mídias e publicidade</li><li>Patrimonial</li><li>Petróleo e gás</li><li>Planejamento</li><li>Propriedade intelectual</li><li>Regulatório</li><li>Societário</li><li>Startups</li><li>Terceiro setor</li><li>Trabalhista</li><li>Tributário</li><li>Urbanístico</li></ul>
+      <ul>{{areas}}</ul>
+      <ul aria-hidden="true">{{areas}}</ul>
     </div>
   </div>
 
@@ -415,12 +415,12 @@
       <h2 class="display reveal">Tecnologia a serviço de um <em>atendimento humano.</em></h2>
       <div class="cols">
         <div class="col reveal">
-          <svg class="i" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M168,112a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,112Zm-8,24H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16Zm72-8A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"/></svg>
+          {{icon:chat-circle-text}}
           <h3>Comunicação ativa</h3>
           <p>Plantões periódicos de atendimento, relatórios com dados quantitativos e qualitativos e informes temáticos, com nossos profissionais integrados às rotinas e aos negócios dos clientes.</p>
         </div>
         <div class="col reveal" style="--d:1">
-          <svg class="i" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M232,208a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V48a8,8,0,0,1,16,0V156.69l50.34-50.35a8,8,0,0,1,11.32,0L128,132.69,180.69,80H160a8,8,0,0,1,0-16h40a8,8,0,0,1,8,8v40a8,8,0,0,1-16,0V91.31l-58.34,58.35a8,8,0,0,1-11.32,0L96,123.31l-56,56V200H224A8,8,0,0,1,232,208Z"/></svg>
+          {{icon:chart-line-up}}
           <h3>Pareceres e diagnóstico jurídico</h3>
           <p>Análise técnica com estratégias, riscos e prazos, apoiada por analytics, inteligência artificial e dashboards executivos, sem abrir mão do senso crítico e da vivência processual.</p>
         </div>
@@ -458,71 +458,12 @@
             <li>Especialização em Contratos de Infraestrutura, FGV-LAW</li>
             <li>Membro da AASP, Associação dos Advogados de São Paulo</li>
           </ul>
-          <a class="mail" href="mailto:padua@gmpadua.com.br"><svg class="i" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></svg>padua@gmpadua.com.br</a>
+          <a class="mail" href="mailto:padua@gmpadua.com.br">{{icon:envelope-simple}}padua@gmpadua.com.br</a>
         </div>
       </div>
 
       <div class="partners">
-        <article class="partner reveal" style="--d:0">
-          <div class="ph"><img src="assets/img/elias.jpg" alt="Elias Succar Neto, sócio" width="700" height="1068" loading="lazy"></div>
-          <div class="person">
-            <h3>Elias Succar Neto</h3>
-            <p class="role">Sócio</p>
-            <p class="oab">OAB/SP 405.854</p>
-            <p class="focus">Head da Área de Resolução de Conflitos. Contratos públicos e privados, imobiliário, urbanístico e meio ambiente.</p>
-          </div>
-          <details>
-            <summary>Atuação e formação</summary>
-            <p>Ingressou no escritório como estagiário, no primeiro ano da faculdade. Atua no contencioso cível e contratual, nos setores imobiliário, urbanístico e ambiental e em licitações e contratos públicos.</p>
-            <ul><li>Direito, Universidade de Taubaté (2017)</li><li>Pós-graduação em Direito Imobiliário, Faculdade Damásio</li><li>Associado ao IBRADIM</li></ul>
-          </details>
-          <a class="mail" href="mailto:elias@gmpadua.com.br"><svg class="i" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></svg>elias@gmpadua.com.br</a>
-        </article>
-        <article class="partner reveal" style="--d:1">
-          <div class="ph"><img src="assets/img/dalas.jpg" alt="Dálas Patrícia Viana de Oliveira, sócia" width="700" height="1068" loading="lazy"></div>
-          <div class="person">
-            <h3>Dálas Patrícia Viana de Oliveira</h3>
-            <p class="role">Sócia</p>
-            <p class="oab">OAB/SP 340.957</p>
-            <p class="focus">Consultoria Empresarial. Governança e compliance, gestão de contratos, ESG e LGPD.</p>
-          </div>
-          <details>
-            <summary>Atuação e formação</summary>
-            <p>Mais de 10 anos em governança, gestão de contratos e no contencioso trabalhista e sindical. Atua na implantação de programas de compliance, ESG, LGPD, ética e integridade, e na consultoria para o Terceiro Setor.</p>
-            <ul><li>Direito, Universidade do Vale do Paraíba (2005)</li><li>Certificação em Compliance Público e Anticorrupção, CPC &amp; ICP (2019)</li><li>Curso livre de Compliance de LGPD, LEC-FGV</li></ul>
-          </details>
-          <a class="mail" href="mailto:dalas@gmpadua.com.br"><svg class="i" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></svg>dalas@gmpadua.com.br</a>
-        </article>
-        <article class="partner reveal" style="--d:2">
-          <div class="ph"><img src="assets/img/gabriela.jpg" alt="Gabriela Dellú, sócia" width="700" height="1068" loading="lazy"></div>
-          <div class="person">
-            <h3>Gabriela Dellú</h3>
-            <p class="role">Sócia</p>
-            <p class="oab">OAB/SP 474.563</p>
-            <p class="focus">Consultivo e Contencioso Trabalhista. Relações de trabalho na indústria e em serviços.</p>
-          </div>
-          <details>
-            <summary>Atuação e formação</summary>
-            <p>Coordena a defesa de clientes em reclamações trabalhistas, com atuação em audiências, perícias técnicas e sustentações orais, em especial nos setores de engenharia, manutenção industrial e infraestrutura. Atua também no consultivo e preventivo trabalhista.</p>
-            <ul><li>Direito, Universidade do Vale do Paraíba (2021)</li><li>Pós-graduação em Direito Processual Aplicado, Escola Paulista de Direito</li><li>Pós-graduações em Direito do Trabalho e Processual do Trabalho e em Família e Sucessões, Legale</li><li>Especialização em Cálculos Trabalhistas, Instituto de Direito Real</li></ul>
-          </details>
-          <a class="mail" href="mailto:gabriela@gmpadua.com.br"><svg class="i" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></svg>gabriela@gmpadua.com.br</a>
-        </article>
-        <article class="partner reveal" style="--d:3">
-          <div class="ph"><img src="assets/img/vitor.jpg" alt="Vitor Vidal, sócio" width="700" height="1068" loading="lazy"></div>
-          <div class="person">
-            <h3>Vitor Vidal</h3>
-            <p class="role">Sócio</p>
-            <p class="oab">OAB/SP 489.635</p>
-            <p class="focus">Consultoria Societária e Tributária. Planejamento fiscal, private equity, venture capital e M&amp;A.</p>
-          </div>
-          <details>
-            <summary>Atuação e formação</summary>
-            <p>Iniciou a carreira no escritório como estagiário. Atua em operações societárias, reestruturações e M&amp;A, em planejamento e contencioso tributário e em propriedade industrial: marcas, softwares e ativos intangíveis.</p>
-            <ul><li>Direito, Universidade Anhanguera (2022)</li><li>Pós-graduação em Direito Empresarial, FACEO (2024)</li><li>Pós-graduação em Direito Societário, FGV-LAW SP (2026)</li></ul>
-          </details>
-          <a class="mail" href="mailto:vitor@gmpadua.com.br"><svg class="i" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></svg>vitor@gmpadua.com.br</a>
-        </article>
+        {{partners}}
       </div>
     </div>
   </section>
@@ -532,26 +473,7 @@
       <h2 class="display reveal">Informação clara sobre <em>temas que afetam empresas.</em></h2>
       <p class="lead reveal">Publicamos análises sobre legislação no Instagram e no LinkedIn. Alguns dos temas recentes:</p>
       <div class="posts">
-        <a class="post reveal" style="--d:0" href="https://www.instagram.com/gmpadua.advogados/" target="_blank" rel="noopener">
-          <span class="k">Óleo e gás</span>
-          <div><h3>Licitação da Petrobras segue a Lei 14.133?</h3><p>As estatais seguem a Lei das Estatais e o seu próprio regulamento, com prazos e fases diferentes.</p></div>
-          <span class="go" aria-hidden="true"><svg class="i" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"/></svg></span>
-        </a>
-        <a class="post reveal" style="--d:1" href="https://www.instagram.com/gmpadua.advogados/" target="_blank" rel="noopener">
-          <span class="k">Compliance</span>
-          <div><h3>Due Diligence de Integridade</h3><p>Como a avaliação de integridade influencia o acesso de fornecedores às contratações de estatais.</p></div>
-          <span class="go" aria-hidden="true"><svg class="i" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"/></svg></span>
-        </a>
-        <a class="post reveal" style="--d:2" href="https://www.instagram.com/gmpadua.advogados/" target="_blank" rel="noopener">
-          <span class="k">Societário</span>
-          <div><h3>Consórcios: o que definir antes de assinar</h3><p>Responsabilidade, divisão de escopo e emissão de atestados no acordo entre consorciadas.</p></div>
-          <span class="go" aria-hidden="true"><svg class="i" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"/></svg></span>
-        </a>
-        <a class="post reveal" style="--d:3" href="https://www.instagram.com/gmpadua.advogados/" target="_blank" rel="noopener">
-          <span class="k">Societário</span>
-          <div><h3>Acordo de sócios: por que formalizar</h3><p>Regras de voto, entrada, saída e transferência de participação definidas antes do conflito.</p></div>
-          <span class="go" aria-hidden="true"><svg class="i" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"/></svg></span>
-        </a>
+        {{posts}}
       </div>
     </div>
   </section>
@@ -564,29 +486,29 @@
       </div>
       <div class="bento">
         <a class="tile wa reveal" href="https://wa.link/rtgvab" target="_blank" rel="noopener">
-          <svg class="i" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M187.58,144.84l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88,40,40,0,0,0,40-40A8,8,0,0,0,187.58,144.84ZM152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155l14.61-9.74,23,11.48A24,24,0,0,1,152,176ZM128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z"/></svg>
+          {{icon:whatsapp-logo}}
           <div><small>WhatsApp</small><strong>Converse com a nossa equipe</strong></div>
         </a>
         <a class="tile reveal" style="--d:1" href="tel:+551233081088">
-          <svg class="i" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></svg>
+          {{icon:phone}}
           <div><small>Telefone</small><strong>(12) 3308-1088</strong></div>
         </a>
         <a class="tile reveal" style="--d:2" href="mailto:advocacia@gmpadua.com.br">
-          <svg class="i" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></svg>
+          {{icon:envelope-simple}}
           <div><small>E-mail</small><strong>advocacia@<wbr>gmpadua.com.br</strong></div>
         </a>
         <div class="tile addr reveal">
-          <svg class="i" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"/></svg>
+          {{icon:map-pin}}
           <div>
             <small>Endereço</small>
             <address>Rua Armando de Oliveira Cobra, 50<br>Edifício NWT, Sala 1909, Jardim Aquarius<br>São José dos Campos/SP, CEP 12.246-002</address>
           </div>
-          <a class="btn btn-line" href="https://bit.ly/4hEBvmP" target="_blank" rel="noopener">Ver no mapa <svg class="i" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"/></svg></a>
+          <a class="btn btn-line" href="https://bit.ly/4hEBvmP" target="_blank" rel="noopener">Ver no mapa {{icon:arrow-up-right}}</a>
         </div>
         <div class="tile social reveal" style="--d:1">
           <small>Redes</small>
-          <a href="https://www.instagram.com/gmpadua.advogados/" target="_blank" rel="noopener"><svg class="i" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"/></svg>Instagram</a>
-          <a href="https://br.linkedin.com/company/g.m.-p%C3%A1dua-sociedade-de-advogados" target="_blank" rel="noopener"><svg class="i" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"/></svg>LinkedIn</a>
+          <a href="https://www.instagram.com/gmpadua.advogados/" target="_blank" rel="noopener">{{icon:instagram-logo}}Instagram</a>
+          <a href="https://br.linkedin.com/company/g.m.-p%C3%A1dua-sociedade-de-advogados" target="_blank" rel="noopener">{{icon:linkedin-logo}}LinkedIn</a>
         </div>
       </div>
       <p class="note">Por sigilo profissional, não envie documentos ou detalhes do seu caso por redes sociais. O primeiro contato serve para agendar um atendimento com a equipe.</p>
