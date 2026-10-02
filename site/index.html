@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>G.M. Pádua Advogados | Advocacia Empresarial em São José dos Campos</title>
+  <meta name="description" content="G.M. Pádua Advogados, sociedade de advogados OAB/SP 8.938, com sede em São José dos Campos/SP. Advocacia empresarial, consultivo e contencioso: óleo e gás, infraestrutura, defesa, imobiliário, societário, tributário, trabalhista e compliance.">
+  <meta property="og:title" content="G.M. Pádua Advogados">
+  <meta property="og:description" content="Ética. Estratégia. Experiência. Excelência. 25 anos de serviços jurídicos.">
+  <meta property="og:image" content="assets/img/arvore.jpg">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <style>
+    :root{
+      --floresta:#0F2C20; --floresta-2:#163B2B; --padua:#74C28E; --ouro:#C08B3E; --ouro-claro:#E6A52D;
+      --perg:#F1EAD5; --gelo:#FBFBF0; --carbono:#1E1E1E; --grafite:#4A4A4A; --cinza:#D0D2C2;
+      --max:1180px; --gutter:clamp(16px,4vw,48px);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;scroll-padding-top:84px}
+    body{font-family:'Lora',Georgia,serif;color:var(--carbono);background:var(--gelo);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
+    img{max-width:100%;height:auto;display:block}
+    a{color:inherit}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+    .cinzel{font-family:'Cinzel',serif}
+    .corm{font-family:'Cormorant',serif;font-style:italic;font-weight:400}
+    .eyebrow{font-family:'Cinzel',serif;font-size:13px;letter-spacing:.28em;text-transform:uppercase;color:var(--ouro)}
+    .gold{background:linear-gradient(90deg,#AC7E22,#FAB533 50%,#AC7E22);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .rule{height:2px;width:96px;background:linear-gradient(90deg,#AC7E22,#FAB533 50%,#AC7E22);border:0}
+    h2.title{font-family:'Cormorant',serif;font-style:italic;font-weight:400;font-size:clamp(36px,5vw,58px);line-height:1.08;color:var(--floresta);margin:14px 0 22px}
+    .dark h2.title{color:var(--perg)}
+    section{padding:clamp(72px,10vw,128px) 0}
+    .lead{font-size:clamp(18px,2vw,20px);color:var(--grafite);max-width:720px}
+
+    /* Cabeçalho */
+    header{position:sticky;top:0;z-index:50;background:rgba(15,44,32,.97);backdrop-filter:blur(6px);border-bottom:1px solid rgba(192,139,62,.35)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+    .brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--perg)}
+    .brand img{width:40px}
+    .brand b{display:block;font-family:'Cinzel';font-weight:700;font-size:19px;letter-spacing:.06em;line-height:1}
+    .brand span{display:block;font-family:'Cinzel';font-size:10.5px;letter-spacing:.42em;margin-top:5px}
+    .menu{display:flex;gap:30px;list-style:none;align-items:center}
+    .menu a{text-decoration:none;color:var(--perg);font-family:'Cinzel';font-size:13px;letter-spacing:.16em;text-transform:uppercase;padding:6px 0;border-bottom:1px solid transparent;transition:border-color .2s,color .2s}
+    .menu a:hover,.menu a:focus-visible{color:var(--padua);border-color:var(--padua);outline:none}
+    .menu .cta{border:1px solid var(--padua);padding:10px 18px;border-radius:2px}
+    .menu .cta:hover{background:var(--padua);color:var(--floresta)}
+    .burger{display:none;background:none;border:0;color:var(--perg);cursor:pointer;padding:8px}
+    .burger svg{width:28px;height:28px}
+
+    /* Hero */
+    .hero{position:relative;min-height:min(92vh,860px);display:flex;align-items:center;color:var(--perg);background:var(--floresta);overflow:hidden;padding:120px 0 96px}
+    .hero::before{content:"";position:absolute;inset:0;background:url(assets/img/arvore.jpg) 68% center/cover;opacity:.55}
+    .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,30,22,.97) 0%,rgba(10,30,22,.85) 42%,rgba(10,30,22,.25) 100%)}
+    .hero .wrap{position:relative;z-index:2;width:100%}
+    .hero h1{font-family:'Cormorant',serif;font-style:italic;font-weight:400;font-size:clamp(44px,7vw,92px);line-height:1.02;max-width:760px;margin:22px 0 26px}
+    .hero p{max-width:560px;font-size:clamp(17px,2vw,20px);color:rgba(241,234,213,.9)}
+    .hero .actions{display:flex;flex-wrap:wrap;gap:16px;margin-top:40px}
+    .btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-family:'Cinzel';font-size:13px;letter-spacing:.18em;text-transform:uppercase;padding:16px 26px;border-radius:2px;transition:all .2s}
+    .btn-primary{background:var(--padua);color:var(--floresta);font-weight:700}
+    .btn-primary:hover{background:#8ad3a2}
+    .btn-ghost{border:1px solid rgba(241,234,213,.6);color:var(--perg)}
+    .btn-ghost:hover{border-color:var(--padua);color:var(--padua)}
+    .hero .tag{position:absolute;right:var(--gutter);bottom:36px;z-index:2;font-family:'Cinzel';font-size:12px;letter-spacing:.3em;color:rgba(241,234,213,.7)}
+
+    /* Escritório */
+    .split{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(40px,6vw,88px);align-items:center}
+    .story p+p{margin-top:18px}
+    .story strong{color:var(--floresta)}
+    .quote{margin-top:36px;padding-left:24px;border-left:3px solid var(--padua);font-family:'Cormorant',serif;font-style:italic;font-size:26px;line-height:1.3;color:var(--floresta)}
+    .photo-stack{position:relative}
+    .photo-stack img{border-radius:2px;box-shadow:0 30px 60px rgba(15,44,32,.25)}
+    .photo-stack .p2{position:absolute;width:58%;left:-8%;bottom:-12%;border:8px solid var(--gelo)}
+    .timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:clamp(72px,9vw,110px);border-top:1px solid var(--cinza)}
+    .timeline div{padding:26px 22px 0 0}
+    .timeline b{display:block;font-family:'Cinzel';font-size:22px;color:var(--ouro);margin-bottom:6px}
+    .timeline span{font-size:15.5px;color:var(--grafite);line-height:1.5;display:block}
+
+    /* Árvore */
+    .tree{position:relative;color:var(--perg);background:var(--floresta);overflow:hidden}
+    .tree::before{content:"";position:absolute;inset:0;background:url(assets/img/textura.jpg) center/cover;opacity:.55}
+    .tree .wrap{position:relative;display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(40px,6vw,80px);align-items:center}
+    .tree .img{aspect-ratio:4/5;background:url(assets/img/arvore.jpg) 62% center/cover;border-radius:2px;box-shadow:0 30px 60px rgba(0,0,0,.35)}
+    .tree p{color:rgba(241,234,213,.88);font-size:18.5px}
+    .tree p+p{margin-top:18px}
+    .values{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:36px;font-family:'Cinzel';font-size:15px;letter-spacing:.2em;text-transform:uppercase}
+    .values span{color:var(--padua)}
+
+    /* Protocolo */
+    .pillars{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:48px}
+    .pillar{background:#fff;border:1px solid var(--cinza);border-top:3px solid var(--padua);padding:38px 36px;border-radius:2px}
+    .pillar svg{width:42px;height:42px;color:var(--floresta);margin-bottom:20px}
+    .pillar h3{font-family:'Lora';font-weight:600;font-size:23px;color:var(--floresta);margin-bottom:12px}
+    .pillar p{color:var(--grafite)}
+
+    /* Áreas */
+    .areas{background:var(--perg)}
+    .area-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:52px}
+    .area{background:var(--gelo);border-radius:2px;overflow:hidden;display:flex;flex-direction:column;border:1px solid rgba(192,139,62,.25)}
+    .area .num{font-family:'Cinzel';font-size:13px;letter-spacing:.24em;color:var(--ouro)}
+    .area .body{padding:34px 34px 36px}
+    .area h3{font-family:'Cormorant',serif;font-style:italic;font-weight:500;font-size:31px;line-height:1.1;color:var(--floresta);margin:10px 0 14px}
+    .area p{color:var(--grafite);font-size:16px}
+    .area ul{list-style:none;margin-top:18px}
+    .area li{position:relative;padding:8px 0 8px 26px;border-top:1px solid rgba(208,210,194,.7);font-size:15.5px}
+    .area li::before{content:"";position:absolute;left:0;top:19px;width:12px;height:2px;background:var(--ouro)}
+    .area li b{color:var(--floresta);font-weight:600}
+    .tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:56px}
+    .tags span{font-size:14.5px;padding:8px 16px;border:1px solid rgba(15,44,32,.25);border-radius:40px;color:var(--floresta);background:var(--gelo)}
+    .tags-title{margin-top:72px}
+
+    /* Equipe */
+    .team-photo{margin-top:48px;border-radius:2px;overflow:hidden;aspect-ratio:3/1;background:url(assets/img/equipe.jpg) center 30%/cover}
+    .team{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:56px}
+    .member{background:#fff;border:1px solid var(--cinza);border-radius:2px;overflow:hidden;display:flex;flex-direction:column}
+    .member .ph{aspect-ratio:4/4.4;background-size:cover;background-position:center 18%}
+    .member .info{padding:26px 26px 28px;display:flex;flex-direction:column;flex:1}
+    .member h3{font-family:'Cinzel';font-weight:700;font-size:20px;letter-spacing:.02em;color:var(--floresta);line-height:1.25}
+    .member .role{font-family:'Cormorant',serif;font-style:italic;font-size:21px;color:var(--ouro);margin-top:2px}
+    .member .oab{font-size:13.5px;letter-spacing:.06em;color:var(--grafite);margin-top:2px}
+    .member .focus{font-size:14.5px;color:var(--floresta);font-weight:600;margin-top:14px;line-height:1.5}
+    .member details{margin-top:14px;border-top:1px solid var(--cinza);padding-top:12px}
+    .member summary{cursor:pointer;font-family:'Cinzel';font-size:12.5px;letter-spacing:.18em;color:var(--ouro);list-style:none}
+    .member summary::-webkit-details-marker{display:none}
+    .member summary::after{content:" +"}
+    .member details[open] summary::after{content:" –"}
+    .member details p{font-size:15px;color:var(--grafite);margin-top:12px;line-height:1.6}
+    .member details h4{font-family:'Cinzel';font-size:12px;letter-spacing:.18em;color:var(--floresta);margin-top:14px}
+    .member details ul{list-style:none;font-size:14.5px;color:var(--grafite);margin-top:6px}
+    .member details li{padding:3px 0}
+    .member .mail{margin-top:auto;padding-top:16px;font-size:14.5px;color:var(--floresta);text-decoration:none;border-bottom:1px solid transparent;align-self:flex-start}
+    .member .mail:hover{border-color:var(--padua)}
+
+    /* Conteúdo */
+    .posts{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:48px}
+    .post{background:var(--floresta);color:var(--perg);border-radius:2px;padding:30px 26px;display:flex;flex-direction:column;min-height:300px;position:relative;overflow:hidden}
+    .post::after{content:"";position:absolute;right:-30px;bottom:-30px;width:150px;height:150px;background:url(assets/img/logo.png) center/contain no-repeat;opacity:.08}
+    .post .k{font-family:'Cinzel';font-size:11.5px;letter-spacing:.22em;color:var(--padua)}
+    .post h3{font-family:'Cormorant',serif;font-style:italic;font-weight:400;font-size:27px;line-height:1.12;margin:14px 0 14px}
+    .post p{font-size:15px;color:rgba(241,234,213,.82);line-height:1.55}
+    .post .ref{margin-top:auto;padding-top:18px;font-family:'Cinzel';font-size:11.5px;letter-spacing:.12em;color:var(--ouro-claro)}
+    .follow{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+    .follow .btn{border:1px solid var(--floresta);color:var(--floresta)}
+    .follow .btn:hover{background:var(--floresta);color:var(--perg)}
+
+    /* Contato */
+    .contact{background:var(--floresta);color:var(--perg);position:relative;overflow:hidden}
+    .contact::before{content:"";position:absolute;inset:0;background:url(assets/img/textura.jpg) center/cover;opacity:.5}
+    .contact .wrap{position:relative}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,80px);margin-top:12px;align-items:start}
+    .channels{display:grid;gap:14px}
+    .channel{display:flex;gap:18px;align-items:center;text-decoration:none;padding:20px 22px;border:1px solid rgba(241,234,213,.22);border-radius:2px;transition:border-color .2s,background .2s}
+    .channel:hover{border-color:var(--padua);background:rgba(116,194,142,.07)}
+    .channel svg{width:26px;height:26px;color:var(--padua);flex:none}
+    .channel small{display:block;font-family:'Cinzel';font-size:11.5px;letter-spacing:.2em;color:var(--padua)}
+    .channel span{font-size:17px}
+    .address p{color:rgba(241,234,213,.88)}
+    .address .note{margin-top:28px;font-size:14.5px;color:rgba(241,234,213,.7);border-top:1px solid rgba(241,234,213,.18);padding-top:20px}
+
+    /* Rodapé */
+    footer{background:#0A1F16;color:rgba(241,234,213,.75);padding:52px 0 40px;font-size:14px}
+    .foot{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;align-items:flex-start}
+    .foot .brand{margin-bottom:16px}
+    .foot .legal{max-width:520px;line-height:1.6}
+    .foot .legal p+p{margin-top:10px}
+    .foot nav{display:flex;gap:22px;flex-wrap:wrap}
+    .foot nav a{text-decoration:none;font-family:'Cinzel';font-size:12px;letter-spacing:.16em}
+    .foot nav a:hover{color:var(--padua)}
+    .copy{margin-top:36px;padding-top:22px;border-top:1px solid rgba(241,234,213,.12);font-size:13px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+    /* Responsivo */
+    @media (max-width:1060px){
+      .posts{grid-template-columns:repeat(2,1fr)}
+      .team{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:900px){
+      .menu{position:fixed;inset:76px 0 auto 0;flex-direction:column;align-items:flex-start;gap:0;background:var(--floresta);padding:12px var(--gutter) 28px;border-bottom:1px solid rgba(192,139,62,.35);transform:translateY(-130%);transition:transform .25s}
+      .menu.open{transform:none}
+      .menu li{width:100%}
+      .menu a{display:block;padding:16px 0;border-bottom:1px solid rgba(241,234,213,.1)}
+      .menu .cta{margin-top:14px;text-align:center}
+      .burger{display:block}
+      .split,.tree .wrap,.contact-grid,.pillars,.area-grid{grid-template-columns:1fr}
+      .photo-stack{margin-bottom:14%}
+      .photo-stack .p2{left:0;width:62%}
+      .timeline{grid-template-columns:1fr 1fr;row-gap:12px}
+      .tree .img{aspect-ratio:16/11}
+      .team-photo{aspect-ratio:16/9}
+    }
+    @media (max-width:600px){
+      body{font-size:16px}
+      .team,.posts{grid-template-columns:1fr}
+      .timeline{grid-template-columns:1fr}
+      .hero .tag{display:none}
+      .pillar,.area .body{padding:28px 24px}
+    }
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#inicio" aria-label="G.M. Pádua Advogados, início">
+      <img src="assets/img/logo.png" alt="">
+      <div><b>G.M. PÁDUA</b><span>ADVOGADOS</span></div>
+    </a>
+    <button class="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <ul class="menu" id="menu">
+      <li><a href="#escritorio">O Escritório</a></li>
+      <li><a href="#areas">Áreas</a></li>
+      <li><a href="#equipe">Equipe</a></li>
+      <li><a href="#conteudo">Conteúdo</a></li>
+      <li><a class="cta" href="#contato">Contato</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="wrap">
+      <div class="eyebrow" style="color:var(--padua)">Ética · Estratégia · Experiência · Excelência</div>
+      <h1>Advocacia empresarial com <span class="gold">25 anos</span> de serviços jurídicos.</h1>
+      <p>Consultivo e contencioso para pessoas e empresas, com sede em São José dos Campos e atuação em vários estados do Brasil.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#areas">Áreas de atuação</a>
+        <a class="btn btn-ghost" href="#contato">Fale com o escritório</a>
+      </div>
+    </div>
+    <div class="tag">Sociedade de Advogados OAB/SP 8.938</div>
+  </section>
+
+  <section id="escritorio">
+    <div class="wrap">
+      <div class="split">
+        <div class="story">
+          <div class="eyebrow">O Escritório</div>
+          <h2 class="title">Nossa marca sempre foi o trabalho sério.</h2>
+          <p>Desde 1998, nosso sócio fundador, Dr. Giulianno M. Pádua, atua em setores importantes da economia, começando pelo <strong>Direito Bancário e Financeiro</strong> em praticamente todas as comarcas do Vale do Paraíba e do Litoral Norte.</p>
+          <p>Entre 2000 e 2003, prestou assessoria na <strong>indústria química e farmacêutica</strong>. Entre 2004 e 2012, atuou em projetos complexos dos setores <strong>petrolífero, logístico e de infraestrutura</strong> nos estados de São Paulo, Rio de Janeiro e Amazonas.</p>
+          <p>Somou-se a isso a atuação consolidada do escritório em <strong>manutenção industrial, defesa, imobiliário e urbanístico</strong>, com uma equipe que atende empresas e projetos em vários estados, no contencioso e no consultivo estratégico.</p>
+          <blockquote class="quote">“Valoramos diariamente a ética, a independência e a eficiência na Advocacia.”</blockquote>
+        </div>
+        <div class="photo-stack">
+          <img src="assets/img/escritorio1.jpg" alt="Ambiente interno do escritório G.M. Pádua Advogados" loading="lazy" width="1001" height="546">
+          <img class="p2" src="assets/img/escritorio2.jpg" alt="Sala de atendimento do escritório" loading="lazy" width="1100" height="545">
+        </div>
+      </div>
+      <div class="timeline" aria-label="Trajetória">
+        <div><b>1998</b><span>Início da atuação no Direito Bancário e Financeiro, no Vale do Paraíba e Litoral Norte</span></div>
+        <div><b>2000–2003</b><span>Assessoria na indústria química e farmacêutica</span></div>
+        <div><b>2004–2012</b><span>Projetos nos setores de petróleo, logística e infraestrutura em SP, RJ e AM</span></div>
+        <div><b>Hoje</b><span>Manutenção industrial, defesa, imobiliário, urbanístico, societário e trabalhista</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tree dark">
+    <div class="wrap">
+      <div class="img" role="img" aria-label="A árvore da Serra do Mar que inspira a marca do escritório"></div>
+      <div>
+        <div class="eyebrow" style="color:var(--padua)">Nossa marca</div>
+        <h2 class="title">A árvore é real, forte e grandiosa.</h2>
+        <p>Ela está na Serra do Mar e pode ser vista à margem da Rodovia dos Tamoios. Representa para nós o Criador, a vida, nossas raízes e nossa amada terra, o Vale do Paraíba.</p>
+        <p>Ela nos faz pensar no passado, no presente e nos motiva a nos prepararmos para o futuro, com a esperança de cumprir nosso único e honroso ofício de advogar.</p>
+        <div class="values"><span>Ética</span><span>Estratégia</span><span>Experiência</span><span>Excelência</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="atendimento">
+    <div class="wrap">
+      <div class="eyebrow">Protocolo de atendimento</div>
+      <h2 class="title">Dois pilares orientam o atendimento aos nossos clientes.</h2>
+      <p class="lead">Estar conectado às novas tecnologias, mantendo um atendimento humano, presente e personalizado.</p>
+      <div class="pillars">
+        <div class="pillar">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="10" width="34" height="24" rx="2"/><path d="M5 12l17 12 17-12"/><path d="M38 30a5 5 0 0 1 5 5v4h-10v-4a5 5 0 0 1 5-5z" fill="var(--padua)" stroke="var(--padua)"/><circle cx="38" cy="42" r="1.6" fill="var(--padua)" stroke="none"/></svg>
+          <h3>Comunicação ativa</h3>
+          <p>Plantões periódicos de atendimento, relatórios com dados quantitativos e qualitativos dos serviços jurídicos e informes temáticos, com transparência, agilidade e integração dos nossos profissionais às rotinas e aos negócios dos clientes.</p>
+        </div>
+        <div class="pillar">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 40V26h6v14M16 40V18h6v22M26 40V24h6v16"/><path d="M6 18l10-8 10 6 12-10" stroke="var(--padua)"/><circle cx="36" cy="34" r="6"/><path d="M40.5 38.5L45 43"/></svg>
+          <h3>Pareceres preliminares e diagnóstico jurídico</h3>
+          <p>Análise técnica com definição de estratégias, riscos e prazos, apoiada por ferramentas de analytics, inteligência artificial e dashboards executivos, sem abrir mão do senso crítico, da vivência processual e de teses robustas para subsidiar as decisões dos clientes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="areas" id="areas">
+    <div class="wrap">
+      <div class="eyebrow">Áreas estratégicas de negócio</div>
+      <h2 class="title">Atendimento integrado às operações de cada setor.</h2>
+      <p class="lead">Assessoria jurídica empresarial completa, com atenção às rotinas e às peculiaridades de cada negócio.</p>
+      <div class="area-grid">
+        <article class="area"><div class="body">
+          <div class="num">01</div>
+          <h3>Advocacia Empresarial e Consultoria Corporativa</h3>
+          <p>Atendimento estratégico integrado às operações das empresas, com foco na prevenção de riscos, na segurança jurídica e na gestão contínua de questões legais.</p>
+          <ul>
+            <li><b>Contratos</b> cíveis, trabalhistas, comerciais e de prestação de serviços</li>
+            <li><b>Questões societárias:</b> contratos sociais, estruturas de SPE e SCP, acordos de sócios</li>
+            <li><b>Consultoria tributária:</b> planejamento e atuação defensiva administrativa e judicial</li>
+          </ul>
+        </div></article>
+        <article class="area"><div class="body">
+          <div class="num">02</div>
+          <h3>Setor Petrolífero, Infraestrutura e Manutenção Industrial</h3>
+          <p>Atuação em projetos complexos em refinarias, terminais, petroquímicas e plantas industriais, como siderurgia, alumínio e celulose, em diversos estados.</p>
+          <ul>
+            <li><b>Direito regulatório</b> (ANP, ANEEL)</li>
+            <li><b>Contratos específicos:</b> EPC, O&amp;M e consórcios</li>
+            <li><b>Questões ambientais:</b> licenciamento, gestão de riscos e resposta a incidentes</li>
+            <li><b>Tributário e societário:</b> M&amp;A, regimes aduaneiros especiais, importação de equipamentos</li>
+            <li><b>Licitações e contratos de estatais</b>, incluindo o regulamento da Petrobras (RLCP), aditivos, pleitos e litígios judiciais ou arbitrais</li>
+          </ul>
+        </div></article>
+        <article class="area"><div class="body">
+          <div class="num">03</div>
+          <h3>Indústria Aeroespacial, de Defesa, Inovação e Tecnologia</h3>
+          <p>Assessoria em questões regulatórias e processos administrativos perante a ANAC, o Ministério da Defesa e outros órgãos do setor.</p>
+          <ul>
+            <li><b>Questões tributárias:</b> qualificação de produtos estratégicos de defesa e regimes fiscais especiais</li>
+            <li><b>Licitações públicas</b> junto ao Poder Público e às Forças Armadas</li>
+            <li><b>Contratos e transações internacionais:</b> compra e venda de produtos de defesa, fusões e aquisições</li>
+            <li><b>Propriedade industrial:</b> marcas, patentes, projetos de P&amp;D e tecnologias avançadas</li>
+          </ul>
+        </div></article>
+        <article class="area"><div class="body">
+          <div class="num">04</div>
+          <h3>Setor Imobiliário, Urbanístico e Meio Ambiente</h3>
+          <p>Suporte consultivo, preventivo e contencioso em transações e empreendimentos que envolvem imóveis, uso do solo e proteção ambiental.</p>
+          <ul>
+            <li><b>Due diligence</b> e auditorias técnicas e legais antes de transações e incorporações</li>
+            <li><b>Estruturação de empreendimentos:</b> loteamentos, incorporações e condomínios</li>
+            <li><b>Contratos:</b> compra e venda, locação, permuta, parceria, construção e empreitada</li>
+            <li><b>Licenciamento e aprovações:</b> licenças ambientais e urbanísticas, alvarás e habite-se</li>
+            <li><b>Conformidade regulatória e consultoria:</b> Plano Diretor, parcelamento do solo, Operações Urbanas Consorciadas e REURB</li>
+          </ul>
+        </div></article>
+      </div>
+
+      <div class="tags-title">
+        <div class="eyebrow">Serviços jurídicos full service</div>
+      </div>
+      <div class="tags" aria-label="Áreas do Direito atendidas">
+        <span>Administrativo</span><span>Aeronáutico</span><span>Arbitragem</span><span>Autoral</span><span>Cível</span><span>Compliance</span><span>Construção civil</span><span>Consumidor</span><span>Contratos</span><span>Digital</span><span>Imobiliário</span><span>Infraestrutura</span><span>Licitações</span><span>Mídias e publicidade</span><span>Patrimonial</span><span>Petróleo e gás</span><span>Planejamento</span><span>Propriedade intelectual</span><span>Regulatório</span><span>Societário</span><span>Startups</span><span>Terceiro setor</span><span>Trabalhista</span><span>Tributário</span><span>Urbanístico</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="equipe">
+    <div class="wrap">
+      <div class="eyebrow">Equipe</div>
+      <h2 class="title">Estamos prontos para o litígio, mas nosso propósito é prover assessoria e solução efetiva.</h2>
+      <p class="lead">Não se trata apenas de conhecimento, formação acadêmica e habilidade técnica, mas sobretudo de consistência no trabalho, sério e digno.</p>
+      <div class="team-photo" role="img" aria-label="Equipe do G.M. Pádua Advogados"></div>
+
+      <div class="team">
+        <article class="member">
+          <div class="ph" style="background-image:url(assets/img/giulianno.jpg)" role="img" aria-label="Foto de Giulianno M. Pádua"></div>
+          <div class="info">
+            <h3>Giulianno M. Pádua</h3>
+            <div class="role">Sócio Fundador</div>
+            <div class="oab">OAB/SP 196.016</div>
+            <div class="focus">Advocacy e Relações Institucionais · Oil &amp; Gas · Infraestrutura · Licitações e Contratos</div>
+            <details>
+              <summary>Atuação e formação</summary>
+              <p>Mais de 25 anos na advocacia empresarial, em especial nos setores petrolífero, petroquímico e de infraestrutura. Participou de projetos nas áreas de refino e logística em São Paulo, Rio de Janeiro e Amazonas. Atua com licitações e contratações públicas, o regulamento da Petrobras (RLCP), consórcios, alianças e convênios, contratos de empreitada (EPC, EPCM, turnkey) e padrões FIDIC.</p>
+              <h4>Formação</h4>
+              <ul><li>Ciências Jurídicas — Faculdade de Direito do Vale do Paraíba (2001)</li><li>Especialização em Contratos de Infraestrutura — FGV-LAW</li><li>Membro da AASP</li></ul>
+            </details>
+            <a class="mail" href="mailto:padua@gmpadua.com.br">padua@gmpadua.com.br</a>
+          </div>
+        </article>
+
+        <article class="member">
+          <div class="ph" style="background-image:url(assets/img/elias.jpg)" role="img" aria-label="Foto de Elias Succar Neto"></div>
+          <div class="info">
+            <h3>Elias Succar Neto</h3>
+            <div class="role">Sócio</div>
+            <div class="oab">OAB/SP 405.854</div>
+            <div class="focus">Head da Área de Resolução de Conflitos · Contratos Públicos e Privados · Imobiliário · Urbanístico · Meio Ambiente</div>
+            <details>
+              <summary>Atuação e formação</summary>
+              <p>Ingressou no escritório como estagiário, no primeiro ano da faculdade. Atua no contencioso judicial cível e contratual, nos setores imobiliário, urbanístico e ambiental e no Direito Administrativo, em licitações e contratos públicos, com destaque para os setores de publicidade e comunicação e petrolífero e petroquímico.</p>
+              <h4>Formação</h4>
+              <ul><li>Direito — Universidade de Taubaté (2017)</li><li>Pós-graduação em Direito Imobiliário — Faculdade Damásio</li><li>Associado ao IBRADIM</li></ul>
+            </details>
+            <a class="mail" href="mailto:elias@gmpadua.com.br">elias@gmpadua.com.br</a>
+          </div>
+        </article>
+
+        <article class="member">
+          <div class="ph" style="background-image:url(assets/img/dalas.jpg)" role="img" aria-label="Foto de Dálas Patrícia Viana de Oliveira"></div>
+          <div class="info">
+            <h3>Dálas Patrícia Viana de Oliveira</h3>
+            <div class="role">Sócia</div>
+            <div class="oab">OAB/SP 340.957</div>
+            <div class="focus">Consultoria Empresarial · Governança e Compliance · Gestão de Contratos · ESG · LGPD</div>
+            <details>
+              <summary>Atuação e formação</summary>
+              <p>Mais de 10 anos de experiência em governança, gestão de contratos e no contencioso trabalhista e sindical, com projetos no setor petrolífero. Atua na implantação de programas de compliance, ESG, LGPD, ética e integridade, em projetos de conformidade para RH e segurança da informação, na gestão de contratos e na consultoria para o Terceiro Setor.</p>
+              <h4>Formação</h4>
+              <ul><li>Direito — Universidade do Vale do Paraíba (2005)</li><li>Certificação em Compliance Público e Anticorrupção — CPC &amp; ICP (2019)</li><li>Curso livre de Compliance de LGPD — LEC-FGV</li></ul>
+            </details>
+            <a class="mail" href="mailto:dalas@gmpadua.com.br">dalas@gmpadua.com.br</a>
+          </div>
+        </article>
+
+        <article class="member">
+          <div class="ph" style="background-image:url(assets/img/gabriela.jpg)" role="img" aria-label="Foto de Gabriela Dellú"></div>
+          <div class="info">
+            <h3>Gabriela Dellú</h3>
+            <div class="role">Sócia</div>
+            <div class="oab">OAB/SP 474.563</div>
+            <div class="focus">Consultivo e Contencioso Trabalhista · Relações de Trabalho na Indústria e Serviços</div>
+            <details>
+              <summary>Atuação e formação</summary>
+              <p>Atua na área trabalhista empresarial, coordenando a defesa de clientes em reclamações trabalhistas, com atuação em audiências, perícias técnicas e sustentações orais nos tribunais, em especial nos setores de engenharia, manutenção industrial e infraestrutura. Atua também no consultivo e preventivo trabalhista, com a emissão de pareceres.</p>
+              <h4>Formação</h4>
+              <ul><li>Direito — Universidade do Vale do Paraíba (2021)</li><li>Pós-graduação em Direito Processual Aplicado — Escola Paulista de Direito</li><li>Pós-graduações em Direito do Trabalho e Processual do Trabalho e em Direito de Família e Sucessões — Legale</li><li>Especialização em Cálculos Trabalhistas — Instituto de Direito Real</li></ul>
+            </details>
+            <a class="mail" href="mailto:gabriela@gmpadua.com.br">gabriela@gmpadua.com.br</a>
+          </div>
+        </article>
+
+        <article class="member">
+          <div class="ph" style="background-image:url(assets/img/vitor.jpg)" role="img" aria-label="Foto de Vitor Vidal"></div>
+          <div class="info">
+            <h3>Vitor Vidal</h3>
+            <div class="role">Sócio</div>
+            <div class="oab">OAB/SP 489.635</div>
+            <div class="focus">Consultoria Societária e Tributária · Planejamento Fiscal · Private Equity e Venture Capital · M&amp;A</div>
+            <details>
+              <summary>Atuação e formação</summary>
+              <p>Iniciou a carreira no escritório como estagiário. Atua em operações societárias, reestruturações e M&amp;A, elaborando pareceres, estatutos, atas, acordos e contratos empresariais. Na área tributária, atua em planejamento, análise de impactos fiscais e contencioso tributário administrativo e judicial. Tem experiência em propriedade industrial: marcas, softwares e ativos intangíveis.</p>
+              <h4>Formação</h4>
+              <ul><li>Direito — Universidade Anhanguera (2022)</li><li>Pós-graduação em Direito Empresarial — FACEO (2024)</li><li>Pós-graduação em Direito Societário — FGV-LAW SP (2026)</li></ul>
+            </details>
+            <a class="mail" href="mailto:vitor@gmpadua.com.br">vitor@gmpadua.com.br</a>
+          </div>
+        </article>
+
+        <article class="member" style="background:var(--floresta);color:var(--perg);justify-content:center">
+          <div class="info" style="justify-content:center">
+            <img src="assets/img/logo.png" alt="" style="width:70px;margin-bottom:22px">
+            <h3 style="color:var(--perg)">Uma equipe completa</h3>
+            <p style="margin-top:12px;color:rgba(241,234,213,.85);font-size:15.5px">Além dos sócios, o escritório conta com advogados e equipe de apoio dedicados ao acompanhamento contínuo de cada cliente.</p>
+            <a class="btn btn-ghost" href="#contato" style="margin-top:24px;align-self:flex-start">Fale com a equipe</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="conteudo" style="background:var(--perg)">
+    <div class="wrap">
+      <div class="eyebrow">Conteúdo jurídico</div>
+      <h2 class="title">Informação clara sobre temas que afetam empresas.</h2>
+      <p class="lead">Publicamos análises sobre legislação e jurisprudência no Instagram e no LinkedIn. Alguns dos temas recentes:</p>
+      <div class="posts">
+        <article class="post"><div class="k">Óleo &amp; Gás</div><h3>Licitação da Petrobras segue a Lei 14.133?</h3><p>As estatais seguem a Lei das Estatais e o seu próprio regulamento de licitações, com prazos e fases diferentes.</p><div class="ref">Lei 13.303/2016</div></article>
+        <article class="post"><div class="k">Compliance</div><h3>Due Diligence de Integridade</h3><p>Como a avaliação de integridade influencia o acesso de fornecedores a contratações de estatais.</p><div class="ref">Lei 12.846/2013</div></article>
+        <article class="post"><div class="k">Societário</div><h3>Consórcios: o que definir antes de assinar</h3><p>Responsabilidade, divisão de escopo e emissão de atestados no acordo entre consorciadas.</p><div class="ref">Lei 6.404/1976, art. 278</div></article>
+        <article class="post"><div class="k">Societário</div><h3>Acordo de sócios: por que formalizar</h3><p>Regras de voto, entrada, saída e transferência de participação definidas antes do conflito.</p><div class="ref">Lei 6.404/1976, art. 118</div></article>
+      </div>
+      <div class="follow">
+        <a class="btn" href="https://www.instagram.com/gmpadua.advogados/" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn" href="https://br.linkedin.com/company/g.m.-p%C3%A1dua-sociedade-de-advogados" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact dark" id="contato">
+    <div class="wrap">
+      <div class="eyebrow" style="color:var(--padua)">Contato</div>
+      <h2 class="title">Fale com o escritório.</h2>
+      <div class="contact-grid">
+        <div class="channels">
+          <a class="channel" href="https://wa.link/rtgvab" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.6 11.6 0 0 0 4.4 3.9c1.7.7 2.3.8 3.1.6a2.7 2.7 0 0 0 1.7-1.2 2.2 2.2 0 0 0 .2-1.2c-.1-.1-.3-.2-.6-.3z"/></svg>
+            <div><small>WhatsApp</small><span>Converse com o escritório</span></div>
+          </a>
+          <a class="channel" href="tel:+551233081088">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>
+            <div><small>Telefone</small><span>+55 (12) 3308-1088</span></div>
+          </a>
+          <a class="channel" href="mailto:advocacia@gmpadua.com.br">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            <div><small>E-mail</small><span>advocacia@gmpadua.com.br</span></div>
+          </a>
+          <a class="channel" href="https://www.instagram.com/gmpadua.advogados/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            <div><small>Instagram</small><span>@gmpadua.advogados</span></div>
+          </a>
+          <a class="channel" href="https://br.linkedin.com/company/g.m.-p%C3%A1dua-sociedade-de-advogados" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1a4.2 4.2 0 0 1 3.8-2c4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21h-4z"/></svg>
+            <div><small>LinkedIn</small><span>G.M. Pádua Sociedade de Advogados</span></div>
+          </a>
+        </div>
+        <div class="address">
+          <div class="eyebrow" style="color:var(--padua);margin-bottom:14px">Endereço</div>
+          <p style="font-size:20px;line-height:1.55">Av. Armando de Oliveira Cobra, 50<br>Edifício NWT, Conjunto 1909<br>Jardim Aquarius<br>São José dos Campos/SP<br>CEP 12.246-002</p>
+          <a class="btn btn-ghost" href="https://bit.ly/4hEBvmP" target="_blank" rel="noopener" style="margin-top:26px">Ver no mapa</a>
+          <p class="note">Por questões de sigilo profissional, não envie documentos ou detalhes do seu caso por redes sociais. O primeiro contato serve para agendar um atendimento com a equipe.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="legal">
+        <a class="brand" href="#inicio"><img src="assets/img/logo.png" alt=""><div><b>G.M. PÁDUA</b><span>ADVOGADOS</span></div></a>
+        <p>G.M. Pádua Advogados · Sociedade de Advogados inscrita na OAB/SP sob o nº 8.938 · CNPJ 07.690.701/0001-49</p>
+        <p>As informações deste site têm caráter meramente informativo e não constituem consulta ou parecer jurídico.</p>
+        <p>Este site não utiliza cookies nem formulários e não coleta dados pessoais dos visitantes.</p>
+      </div>
+      <nav aria-label="Rodapé">
+        <a href="#escritorio">O Escritório</a><a href="#areas">Áreas</a><a href="#equipe">Equipe</a><a href="#conteudo">Conteúdo</a><a href="#contato">Contato</a>
+      </nav>
+    </div>
+    <div class="copy"><span>© 2026 G.M. Pádua Advogados</span><span>Ética. Estratégia. Experiência. Excelência.</span></div>
+  </div>
+</footer>
+
+<script>
+  const b = document.querySelector('.burger'), m = document.getElementById('menu');
+  b.addEventListener('click', () => { const o = m.classList.toggle('open'); b.setAttribute('aria-expanded', o); });
+  m.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { m.classList.remove('open'); b.setAttribute('aria-expanded', false); }));
+</script>
+</body>
+</html>
